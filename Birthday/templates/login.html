@@ -1,0 +1,78 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #ffe4e1;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        .login-container {
+            text-align: center;
+            border-radius: 10px;
+            padding: 40px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+            background: white;
+            width: 90%;
+            max-width: 400px;
+            margin: 20px;
+        }
+        .login-container h2 {
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+        input[type="text"], input[type="password"], button {
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 100%;
+            font-size: 1em;
+            box-sizing: border-box; /* Ensures padding doesn’t make elements overflow */
+        }
+        button {
+            background-color: #ff4c68;
+            border: none;
+            color: white;
+            font-size: 1.1em;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ff708a;
+        }
+
+        /* Responsive adjustments for smaller screens */
+        @media (max-width: 600px) {
+            .login-container {
+                width: 100%;
+                max-width: 350px;
+                padding: 30px;
+            }
+            .login-container h2 {
+                font-size: 1.5em;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login for You ❤️</h2>
+        <form method="POST">
+            <input type="text" name="username" placeholder="Username" required><br>
+            <input type="password" name="password" placeholder="Password" required><br>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>
